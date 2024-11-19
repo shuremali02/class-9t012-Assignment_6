@@ -5,7 +5,7 @@ export default function Logos() {
   return (
     <div className='bg-gray w-full flex-col md:max-w-[1280px] flex md:flex-row py-4 gap-3 h-[150px] items-center justify-between'>
       <h1 className='md:font-bold font-[Roboto] font-semibold text-lg md:text-2xl px-8'>
-        Trusted by the world's best companies [social proof to build credibility]
+        Trusted by the world &#39; s best companies [social proof to build credibility]
 
       </h1>
       <div className='flex flex-row gap-3 '>
