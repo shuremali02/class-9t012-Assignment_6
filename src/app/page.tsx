@@ -1,4 +1,4 @@
-import Achivements from '@/components/achievement'
+// import Achivements from '@/components/achievement'
 import Footer from '@/components/footer'
 import Navbar from '@/components/header'
 import HeroSec from '@/components/herosec'
@@ -7,6 +7,8 @@ import TopSec from '@/components/top'
 import React from 'react'
 import Testimonial from './Testimonials/page'
 import Courses from './Courses/page'
+import Team from './Team/page'
+
 
 export default function Home() {
   return (
@@ -17,7 +19,8 @@ export default function Home() {
       <HeroSec />
       <Logo />
       <Courses />
-      <Achivements />
+      <Team/>
+    
       <Testimonial />
       <Footer />
     </div>

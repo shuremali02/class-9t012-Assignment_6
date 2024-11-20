@@ -58,7 +58,8 @@ export default function Categories() {
       <p className='mb-10 max-w-xl text-gray-600 '>Discover a wide range of courses covering a variety of subjects, taught by expert instructors.</p>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 w-full max-w-6xl'>
         {Cat.map((cat, index) =>
-          <CategoryCard key={index} {...cat} />
+          <div className={`${index > 2 ? "hidden sm:block " : "block"}`}><CategoryCard key={index} {...cat} /></div>
+
         )}
       </div>
       <Link href={"/Courses"} className='text-center py-8 mt-4 ' >

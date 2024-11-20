@@ -1,5 +1,7 @@
 import React from 'react'
-import TestimonialsCard, { TestimonialsProp } from '@/components/testimonials'
+import TestimonialsCard, { TestimonialsProp } from '@/components/testimonials';
+import { FaArrowLeft,FaArrowRight } from "react-icons/fa6";
+
 
 export default function Testimonial() {
   const Test: TestimonialsProp[] = [
@@ -11,15 +13,15 @@ export default function Testimonial() {
     },
     {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      image: '/images/people1.svg',
+      image: '/images/people2.svg',
       name: 'Erick Kipkemboi',
       designation: 'Scrum Master',
     },
     {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      image: '/images/people1.svg',
-      name: 'Emily Carter',
-      designation: 'Adventure Seeker',
+      image: '/images/people3.svg',
+      name: 'Stephen Kerubo',
+      designation: 'UI/UX Designer',
     },
     // {
     //   description: "I love the personal touch in the posts! It feels like I’m traveling with a friend. Keep up the great work!",
@@ -44,23 +46,35 @@ export default function Testimonial() {
 
 
   return (
-    <>
-      <div className='text-left py-12 '>
+    <div className='bg-gray '>
+      <div className='text-left py-12 px-8 '>
         <h1 className='font-bold text-4xl mb-4 font-[Roboto]'>
-          Customer testimonials
+          Customer testimonials 
         </h1>
-        <p className='text-lg text-gray-600'>
+        <p className='text-lg text-gray-600 font-[Roboto]'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
-      <div className='flex items-center '>
+      <div className='flex items-center py-4 '>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 mx-auto max-w-6xl ' >
           {Test.map((testimonial, index) =>
             <TestimonialsCard key={index} {...testimonial} />
 
           )}
-        </div>
+     
       </div>
-    </>
+           
+        </div>
+        <div className='flex justify-end mr-8 gap-x-2'>
+      <div className='h-12 w-12 rounded-full border border-black text-center'><FaArrowLeft/>
+      </div>
+        <div className='h-12 w-12 rounded-full border border-black text-center items-center'>
+          <FaArrowRight/>
+        </div>
+        </div>
+  </div>
+
+
+  
   )
 }
