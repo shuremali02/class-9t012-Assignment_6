@@ -19,8 +19,8 @@ export default function Home() {
       <HeroSec />
       <Logo />
       <Courses />
-      <Team/>
-    
+      <Team />
+
       <Testimonial />
       <Footer />
     </div>

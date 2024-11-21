@@ -20,7 +20,7 @@ export default function TeamCard(props: TeamProp) {
             <p className="flex flex-row space-x-4">
                 <FaLinkedin /> <FaXTwitter /> <FaGithub />
             </p>
-            
+
         </div>
 
     )

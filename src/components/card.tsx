@@ -23,7 +23,7 @@ export default function CoursesCards(props: Cardprops) {
                 </div >
                 <div className='flex justify-between items-center mb-2 '>
                     <h1 className='text-lg font-semibold  '>{props.category} </h1>
-                    <p className='flex gap-3 text-gray-500'><CiStar className='bg-gray' size={20}/>{props.rating}</p>
+                    <p className='flex gap-3 text-gray-500'><CiStar className='bg-gray' size={20} />{props.rating}</p>
                 </div>
                 <div className='flex flex-col mb-4'>
                     <h2 className=' text-lg font-bold '> {props.title}</h2>

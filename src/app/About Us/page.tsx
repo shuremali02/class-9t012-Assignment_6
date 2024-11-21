@@ -25,11 +25,11 @@ export default function About() {
           </p>
         </div>
         <div>
-          <Image 
-            src="/about.jpg " 
-            alt="Our travel experience" 
-            width={500} 
-            height={350} 
+          <Image
+            src="/about.jpg "
+            alt="Our travel experience"
+            width={500}
+            height={350}
             className="rounded-lg"
           />
         </div>

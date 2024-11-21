@@ -31,7 +31,7 @@ export default function TestimonialsCard(props: TestimonialsProp) {
                     </div>
                     <div className="flex flex-col ">
                         <h1 className="text-md font-semibold font-[Roboto]">{props.name}</h1>
-                        <p  className="font-[Roboto] text-md  "> {props.designation}</p>
+                        <p className="font-[Roboto] text-md  "> {props.designation}</p>
                     </div>
                 </div>
             </div>

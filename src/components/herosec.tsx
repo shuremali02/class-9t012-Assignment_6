@@ -20,7 +20,7 @@ export default function HeroSec() {
             </div>
 
             <div className='w-full md:w-1/2 '>
-                <Image src={"/Herosec.png"}
+                <Image src={"/images/HeroSec.svg"}
                     alt='herosectionimage'
                     height={900}
                     width={720} />

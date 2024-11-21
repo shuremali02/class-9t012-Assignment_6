@@ -1,27 +1,29 @@
-import React from 'react'
-import TestimonialsCard, { TestimonialsProp } from '@/components/testimonials';
-import { FaArrowLeft,FaArrowRight } from "react-icons/fa6";
-
+import React from "react";
+import TestimonialsCard, { TestimonialsProp } from "@/components/testimonials";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 export default function Testimonial() {
   const Test: TestimonialsProp[] = [
     {
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      image: '/images/people1.svg',
-      name: 'James Nduku',
-      designation: 'Software Developer',
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      image: "/images/people1.svg",
+      name: "James Nduku",
+      designation: "Software Developer",
     },
     {
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      image: '/images/people2.svg',
-      name: 'Erick Kipkemboi',
-      designation: 'Scrum Master',
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      image: "/images/people2.svg",
+      name: "Erick Kipkemboi",
+      designation: "Scrum Master",
     },
     {
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      image: '/images/people3.svg',
-      name: 'Stephen Kerubo',
-      designation: 'UI/UX Designer',
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      image: "/images/people3.svg",
+      name: "Stephen Kerubo",
+      designation: "UI/UX Designer",
     },
     // {
     //   description: "I love the personal touch in the posts! It feels like I’m traveling with a friend. Keep up the great work!",
@@ -43,38 +45,31 @@ export default function Testimonial() {
     // },
   ];
 
-
-
   return (
-    <div className='bg-gray '>
-      <div className='text-left py-12 px-8 '>
-        <h1 className='font-bold text-4xl mb-4 font-[Roboto]'>
-          Customer testimonials 
+    <>
+      <div className="text-left py-12 bg-gray px-8  ">
+        <h1 className="font-bold text-4xl mb-4 font-[Roboto]">
+          Customer testimonials
         </h1>
-        <p className='text-lg text-gray-600 font-[Roboto]'>
+        <p className="text-lg text-gray-600 font-[Roboto]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
-      <div className='flex items-center py-4 '>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 mx-auto max-w-6xl ' >
-          {Test.map((testimonial, index) =>
+      <div className="flex items-center py-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 mx-auto max-w-6xl ">
+          {Test.map((testimonial, index) => (
             <TestimonialsCard key={index} {...testimonial} />
-
-          )}
-     
+          ))}
+        </div>
       </div>
-           
+      <div className="flex justify-end items-end gap-x-2 mx-auto px-3 max-w-6xl ml-3 mb-6">
+        <div className="h-12 w-12 rounded-full border border-black flex justify-center items-center">
+          <FaArrowLeft size={28} />
         </div>
-        <div className='flex justify-end mr-8 gap-x-2'>
-      <div className='h-12 w-12 rounded-full border border-black text-center'><FaArrowLeft/>
+        <div className="h-12 w-12 rounded-full border border-black flex justify-center items-center">
+          <FaArrowRight size={28} />
+        </div>
       </div>
-        <div className='h-12 w-12 rounded-full border border-black text-center items-center'>
-          <FaArrowRight/>
-        </div>
-        </div>
-  </div>
-
-
-  
-  )
+    </>
+  );
 }
