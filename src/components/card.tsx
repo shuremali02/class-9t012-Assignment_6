@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { CiStar } from "react-icons/ci";
-import { PiStarDuotone } from "react-icons/pi";
+
 
 export interface Cardprops {
     image: string;

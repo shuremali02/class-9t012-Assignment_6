@@ -67,9 +67,9 @@ export default function Courses() {
                 <p className='text-lg text-gray-600 '>Your Ultimate Guide to learning</p></div>
 
             <div className='flex items-center'>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5  max-w-[1280px] ' >
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5  max-w-[1280px] ' > 
                     {courses.map((course, index) =>
-                        <div className={`${index > 2 ? "hidden sm:block " : "block"}`}>
+                        <div className={`${index > 2 ? "hidden sm:block " : "block"}`} key={index}>
                             < CoursesCards key={index} {...course} />
                         
                         </div>

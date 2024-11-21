@@ -25,11 +25,14 @@ export default function Footer() {
 
           </div> 
         </div>
-        <div>
-          <Image src={"/images/Logo.png"} alt='footerLogo' height={30.38} width={130.6}/>
-        </div>
+        
+        
+        
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 py-9  gap-8 text-center md:text-left">
+        <div className='flex justify-center md:items-start md:justify-start p-6 '>
+          <Image src={"/images/Logo.png"} alt='footerLogo' height={40} width={136}/>
+        </div>
           {/* Column 1: Popular Destinations */}
           <div className="flex flex-col p-6 bg-gray-300">
             <h1 className="font-semibold text-lg mb-2">Courses</h1>
@@ -89,6 +92,7 @@ export default function Footer() {
                     <Link className='h-6 w-6' href={"#"}  ><Image src={"/Instagram.png"} alt={"logo"} height={18} width={24} /> </Link>
                     </div>
                 </div>
+
       </div>
     </footer>
   )

@@ -41,7 +41,7 @@ export default function Team() {
             <p className="text-gray-600 mb-10 max-w-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
             <div className="grid grid-cols  md:grid-cols-3 gap-8 px-8 w-full max-w-6xl">
                 {teamMembers.map((team, index) =>
-                <div className={`${index>2?"hidden sm:block ":"block"}`}>
+                <div className={`${index>2?"hidden sm:block ":"block"}`} key={index}>
                      <TeamCard key={index} {...team} />
                 </div>
                 
