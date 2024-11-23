@@ -46,7 +46,7 @@ export default function Team() {
                     </div>
 
                 )}
-                <Link href={"/Team"} className='text-center py-8 mt-4 ' >
+                <Link href={"/Team"} className='text-center py-8 mt-4 md:hidden ' >
                     <button className='border border-gray-800 py-2 px-6 rounded-md text-sm sm:text-md font-bold transition-transform hover:scale-95 '>View All</button>
                 </Link>
             </div>
