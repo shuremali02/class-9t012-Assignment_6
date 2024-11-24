@@ -74,7 +74,7 @@ export default function Navbar() {
     <nav className="md:hidden absolute top-full left-0 bg-white z-50 w-full py-4 flex flex-col gap-y-4 items-center">
       <div className="flex flex-col gap-[10px] px-[10px]">
         {Routes.map((route, index) => (
-          <Link href={route.href} key={index}>
+          <Link href={route.href} key={index} onClick={() => setisOpen(false)}>
             <span
               className={`flex items-center ${
                 pathname === route.name ? "underline underline-offset-[16px]" : ""
