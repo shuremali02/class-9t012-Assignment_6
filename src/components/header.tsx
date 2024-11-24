@@ -13,10 +13,10 @@ export default function Navbar() {
     href: "#",
     name: "Home"
   }, {
-    href: "#",
-    name: "Courses",
+    href: "/Courses",
+    name: "Courses", 
   }, {
-    href: "#",
+    href: "# ",
     name: "Achievement",
   }, {
     href: "#",
@@ -25,7 +25,7 @@ export default function Navbar() {
     href: "#",
     name: "About Us",
   }, {
-    href: "#",
+    href: "/Testimonials",
     name: "Testimonials",
   },]
 
