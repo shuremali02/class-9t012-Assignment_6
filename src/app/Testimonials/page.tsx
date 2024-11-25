@@ -62,11 +62,11 @@ export default function Testimonial() {
           ))}
         </div>
       </div>
-      <div className="flex justify-end items-end gap-x-2 mx-auto px-3 max-w-6xl ml-3 mb-6">
-        <div className="h-12 w-12 rounded-full border border-black flex justify-center items-center">
+      <div className="flex justify-end items-end gap-x-2 md:mx-auto md:px-3 max-w-6xl md:ml-3 mb-6">
+        <div className="h-12 w-12 rounded-full border border-text flex justify-center items-center">
           <FaArrowLeft size={28} />
         </div>
-        <div className="h-12 w-12 rounded-full border border-black flex justify-center items-center">
+        <div className="h-12 w-12 rounded-full border border-text flex justify-center items-center">
           <FaArrowRight size={28} />
         </div>
       </div>

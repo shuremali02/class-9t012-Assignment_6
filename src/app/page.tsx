@@ -19,11 +19,11 @@ export default function Home() {
       <HeroSec />
       <Logo />
       <Courses />
-      <Team />
+       <Team />
 
-      <Testimonial />
+      <Testimonial /> 
       <Footer />
     </div>
-  )
+  ) 
 }
 

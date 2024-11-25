@@ -36,7 +36,7 @@ export default function Team() {
     ]
 
     return (
-        <div className="flex bg-[#F7F7F7] flex-col min-h-screen items-center text-center py-12">
+        <div className="flex bg-[#F7F7F7] w-full max-w-[1280px] flex-col min-h-screen items-center text-center py-12">
             <h1 className="text-4xl font-bold mb-4">Our team</h1>
             <p className="text-gray-600 mb-10 max-w-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
             <div className="grid grid-cols  md:grid-cols-3 gap-8 px-8 w-full max-w-6xl">
