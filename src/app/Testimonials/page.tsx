@@ -46,15 +46,14 @@ export default function Testimonial() {
   ];
 
   return (
-    <div>
-      <div className="text-left py-12 px-8  ">
+    <div className="text-left py-12 px-8 bg-gray  ">
         <h1 className="font-bold text-4xl mb-4 font-[Roboto]">
           Customer testimonials
         </h1>
         <p className="text-lg text-gray-600 font-[Roboto]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-      </div>
+     
       <div className="flex items-center py-4 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 mx-auto max-w-6xl ">
           {Test.map((testimonial, index) => (
