@@ -46,8 +46,8 @@ export default function Testimonial() {
   ];
 
   return (
-    <>
-      <div className="text-left py-12 bg-gray px-8  ">
+    <div>
+      <div className="text-left py-12 px-8  ">
         <h1 className="font-bold text-4xl mb-4 font-[Roboto]">
           Customer testimonials
         </h1>
@@ -70,6 +70,7 @@ export default function Testimonial() {
           <FaArrowRight size={28} />
         </div>
       </div>
-    </>
+      </div>
+
   );
 }
