@@ -10,12 +10,12 @@ export default function Footer() {
 
       <div className="max-w-7xl space-y-8 px-4 md:px-8 ">
         <div className='flex md:justify-between md:flex-row flex-col justify-center items-center gap-y-5  '>
-          <div className='flex flex-col gap-y-1 text-center md:text-left'>
+          <div className='flex flex-col gap-y-1 text-center md:text-left'> 
             <h1 className='font-semibold font-[Roboto] text-lg'>Subscribe to our newsletter</h1>
             <p className='font-[Roboto] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
           </div>
-          <div className='flex flex-col md:gap-y-1 gap-y-3 w-[400px]'>
+          <div className='flex flex-col md:gap-y-1 gap-y-3  md:w-[400px]'>
             <div className='flex gap-2 flex-col md:flex-row'>
               <input type="text" placeholder='Enter your email' className='py-2 px-7  rounded-md border border-text' />
               <button className='p-1 px-4 border border-text rounded-md'>Subscribe</button>
